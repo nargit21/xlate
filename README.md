@@ -28,7 +28,7 @@ Translate text between 133 languages using LLMs. Works with OpenRouter, OpenAI, 
 
 1. Install the extension from Raycast Store (or run `npm install && npm run dev` for development)
 2. Open Raycast and go to the extension preferences
-3. Set your **API Key** (from OpenRouter, OpenAI, etc.)
+3. Set your **API Key** (from OpenRouter, OpenAI, etc.) — not needed for local models
 4. Optionally adjust the **API Base URL** and **Model**
 
 ### Provider Examples
@@ -44,7 +44,7 @@ Translate text between 133 languages using LLMs. Works with OpenRouter, OpenAI, 
 
 | Setting | Default | Description |
 |---------|---------|-------------|
-| API Key | — | Your API key (required) |
+| API Key | — | Your API key. Not needed for local models (Ollama, LM Studio) |
 | API Base URL | `https://openrouter.ai/api/v1` | API endpoint |
 | Model | `moonshotai/kimi-k2.5` | Model identifier |
 | Source Language | Auto-detect | Default source language |

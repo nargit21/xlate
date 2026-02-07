@@ -121,8 +121,8 @@
       "name": "apiKey",
       "type": "password",
       "title": "API Key",
-      "description": "API key for OpenRouter, OpenAI, or other compatible provider",
-      "required": true
+      "description": "API key for OpenRouter, OpenAI, or other compatible provider. Leave empty for local models (Ollama, LM Studio)",
+      "required": false
     },
     {
       "name": "apiBaseUrl",

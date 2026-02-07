@@ -12,10 +12,6 @@ export function getTranslateCommandPreferences(): TranslateCommandPreferences {
 export function validatePreferences(): { valid: boolean; error?: string } {
   const prefs = getPreferences();
 
-  if (!prefs.apiKey || prefs.apiKey.trim() === "") {
-    return { valid: false, error: "API key is required. Please set it in extension preferences." };
-  }
-
   if (!prefs.apiBaseUrl || prefs.apiBaseUrl.trim() === "") {
     return { valid: false, error: "API base URL is required. Please set it in extension preferences." };
   }

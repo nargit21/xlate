@@ -7,7 +7,7 @@ let lastBaseUrl = "";
 
 export function getClient(): OpenAI {
   const prefs = getPreferences();
-  const apiKey = prefs.apiKey;
+  const apiKey = prefs.apiKey || "not-needed";
   const baseURL = prefs.apiBaseUrl;
 
   if (clientInstance && apiKey === lastApiKey && baseURL === lastBaseUrl) {
