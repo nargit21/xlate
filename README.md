@@ -2,7 +2,7 @@
 
 The most flexible translator for Raycast. Translate text between **133 languages** using any LLM — powered by the OpenAI SDK, so it works with **every OpenAI-compatible API** out of the box.
 
-**OpenRouter, OpenAI, Google Gemini, Anthropic Claude, Mistral, Groq, Together AI, Perplexity, DeepSeek, Cohere, Fireworks AI, AI21, Ollama, LM Studio, LocalAI, vLLM, text-generation-webui, Jan, GPT4All, Kobold.cpp, LiteLLM** — if it speaks the OpenAI API, Xlate works with it. Just set the base URL and model name.
+**OpenRouter, OpenAI (GPT-5), Google Gemini 3, Anthropic Claude Opus 4.6, Mistral Large 3, Groq, Together AI, Perplexity, DeepSeek V3, Cohere, Fireworks AI, Meta Llama 4, Ollama, LM Studio, LocalAI, vLLM, text-generation-webui, Jan, GPT4All, Kobold.cpp, LiteLLM** — if it speaks the OpenAI API, Xlate works with it. Just set the base URL and model name.
 
 ## Why Xlate?
 
@@ -50,19 +50,19 @@ Xlate uses the OpenAI SDK under the hood, which means it works with **any provid
 | Provider | API Base URL | Model Example | API Key |
 |----------|-------------|---------------|---------|
 | **OpenRouter** | `https://openrouter.ai/api/v1` | `moonshotai/kimi-k2.5` | Required |
-| **OpenAI** | `https://api.openai.com/v1` | `gpt-4o` | Required |
-| **Google Gemini** | `https://generativelanguage.googleapis.com/v1beta/openai` | `gemini-2.0-flash` | Required |
+| **OpenAI** | `https://api.openai.com/v1` | `gpt-5.2` | Required |
+| **Google Gemini** | `https://generativelanguage.googleapis.com/v1beta/openai` | `gemini-3-flash` | Required |
+| **Anthropic Claude** | `https://openrouter.ai/api/v1` | `anthropic/claude-opus-4-6` | Required |
 | **DeepSeek** | `https://api.deepseek.com/v1` | `deepseek-chat` | Required |
 | **Mistral** | `https://api.mistral.ai/v1` | `mistral-large-latest` | Required |
 | **Groq** | `https://api.groq.com/openai/v1` | `llama-3.3-70b-versatile` | Required |
-| **Together AI** | `https://api.together.xyz/v1` | `meta-llama/Llama-3-70b-chat-hf` | Required |
-| **Fireworks AI** | `https://api.fireworks.ai/inference/v1` | `accounts/fireworks/models/llama-v3p1-70b-instruct` | Required |
-| **Perplexity** | `https://api.perplexity.ai` | `llama-3.1-sonar-large-128k-online` | Required |
+| **Together AI** | `https://api.together.xyz/v1` | `meta-llama/Llama-4-Maverick-17B-128E-Instruct-FP8` | Required |
+| **Fireworks AI** | `https://api.fireworks.ai/inference/v1` | `accounts/fireworks/models/llama4-maverick-instruct-basic` | Required |
+| **Perplexity** | `https://api.perplexity.ai` | `sonar-pro` | Required |
 | **Cohere** | `https://api.cohere.com/v1` | `command-r-plus` | Required |
-| **Anthropic (via OpenRouter)** | `https://openrouter.ai/api/v1` | `anthropic/claude-sonnet-4-5-20250514` | Required |
-| **Ollama** | `http://localhost:11434/v1` | `llama3` | Not needed |
+| **Ollama** | `http://localhost:11434/v1` | `llama4` | Not needed |
 | **LM Studio** | `http://localhost:1234/v1` | `local-model` | Not needed |
-| **LocalAI** | `http://localhost:8080/v1` | `gpt-4` | Not needed |
+| **LocalAI** | `http://localhost:8080/v1` | `your-model` | Not needed |
 | **vLLM** | `http://localhost:8000/v1` | `your-model` | Not needed |
 | **Jan** | `http://localhost:1337/v1` | `your-model` | Not needed |
 | **GPT4All** | `http://localhost:4891/v1` | `your-model` | Not needed |
@@ -71,7 +71,7 @@ Xlate uses the OpenAI SDK under the hood, which means it works with **any provid
 | **LiteLLM** | `http://localhost:4000/v1` | `your-model` | Not needed |
 | **Any OpenAI-compatible API** | Your endpoint URL | Your model name | Depends |
 
-> **Tip:** OpenRouter gives you access to hundreds of models (GPT-4o, Claude, Gemini, Llama, Mistral, and more) through a single API key.
+> **Tip:** OpenRouter gives you access to hundreds of models (GPT-5, Claude Opus 4.6, Gemini 3, Llama 4, Mistral Large 3, DeepSeek V3, and more) through a single API key.
 
 ## Preferences
 
